@@ -15,7 +15,7 @@ window.ACADEMIC_SITE_CONFIG = {
     repo: "boliu-atmos/boliu-atmos.github.io",
     repoId: "R_kgDORpRMeg",
     category: "General",
-    categoryId: "",
+    categoryId: "DIC_kwDORpRMes4C4lgS",
     mapping: "pathname",
     strict: "0",
     reactionsEnabled: "1",

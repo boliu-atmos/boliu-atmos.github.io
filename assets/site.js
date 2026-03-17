@@ -100,7 +100,8 @@ const translations = {
         "Completed NSFC Young Scientists project 42005118 on CMIP6 surface-temperature bias and its sources.",
       "guestbook-kicker": "Guestbook",
       "guestbook-heading":
-        "The guestbook stays at the bottom, where mature academic homepages usually place interaction."
+        "The guestbook stays at the bottom, where mature academic homepages usually place interaction.",
+      "guestbook-discussions-link": "Open Discussions"
     }
   },
   zh: {
@@ -193,7 +194,8 @@ const translations = {
       "timeline-3": "开始主持国家自然科学基金面上项目 42375037，研究极端降水的物理与动力机制。",
       "timeline-4": "完成国家自然科学基金青年项目 42005118，聚焦 CMIP6 地表温度偏差及其来源。",
       "guestbook-kicker": "留言区",
-      "guestbook-heading": "把互动放在页面底部，更接近成熟学术主页的组织方式。"
+      "guestbook-heading": "把互动放在页面底部，更接近成熟学术主页的组织方式。",
+      "guestbook-discussions-link": "去 Discussions 留言"
     }
   }
 };
@@ -258,6 +260,7 @@ function applyProfile(locale) {
   const heroName = document.getElementById("hero-name");
   const heroTitle = document.getElementById("hero-title");
   const metricRole = document.getElementById("metric-role");
+  const discussionsLink = document.getElementById("guestbook-discussions-link");
   const year = document.getElementById("footer-year");
 
   if (emailLink) {
@@ -296,6 +299,10 @@ function applyProfile(locale) {
 
   if (metricRole) {
     metricRole.textContent = locale === "zh" ? titleZh : titleEn;
+  }
+
+  if (discussionsLink && config.comments?.repo) {
+    discussionsLink.href = `https://github.com/${config.comments.repo}/discussions`;
   }
 
   if (year) {
