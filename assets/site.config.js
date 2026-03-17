@@ -13,7 +13,7 @@ window.ACADEMIC_SITE_CONFIG = {
     enabled: false,
     provider: "giscus",
     repo: "boliu-atmos/boliu-atmos.github.io",
-    repoId: "",
+    repoId: "R_kgDORpRMeg",
     category: "General",
     categoryId: "",
     mapping: "pathname",
