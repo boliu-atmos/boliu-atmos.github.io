@@ -21,7 +21,6 @@ const translations = {
       "hero-eyebrow": "School of Atmospheric Sciences · Chengdu University of Information Technology",
       "hero-lead":
         "I study hydroclimate extremes across East Asia through observations, numerical experiments, and climate-model evaluation, with a particular interest in extreme precipitation, moisture transport, humid heat, and the physical origins of model bias.",
-      "btn-cv": "CV",
       "btn-profile": "Faculty Profile",
       "btn-guestbook": "Leave a Message",
       "topic-1": "Extreme precipitation",
@@ -73,7 +72,6 @@ const translations = {
       "pub-4-meta": "Journal of Climate · co-corresponding author",
       "pub-5-meta": "Geophysical Research Letters · corresponding author",
       "pub-6-meta": "Journal of Hydrology · corresponding author",
-      "pub-footer-cv": "Open full CV",
       "pub-footer-profile": "Official faculty page",
       "teaching-kicker": "Teaching & Mentoring",
       "teaching-heading": "Training students in atmosphere, analysis, and communication.",
@@ -121,7 +119,6 @@ const translations = {
       "hero-eyebrow": "成都信息工程大学大气科学学院",
       "hero-lead":
         "我的研究聚焦东亚地区水文气候极端事件，结合观测分析、数值试验与气候模式评估，重点关注极端降水、水汽输送、湿热事件及气候模式偏差的物理成因。",
-      "btn-cv": "简历",
       "btn-profile": "学院主页",
       "btn-guestbook": "我要留言",
       "topic-1": "极端降水",
@@ -172,7 +169,6 @@ const translations = {
       "pub-4-meta": "Journal of Climate · 共同通讯作者",
       "pub-5-meta": "Geophysical Research Letters · 通讯作者",
       "pub-6-meta": "Journal of Hydrology · 通讯作者",
-      "pub-footer-cv": "查看完整简历",
       "pub-footer-profile": "查看官方教师主页",
       "teaching-kicker": "教学与指导",
       "teaching-heading": "在课堂、论文和图表表达中训练学生的研究能力。",
@@ -250,12 +246,10 @@ function applyProfile(locale) {
   const chineseName = profile.chineseName ?? "刘博";
   const titleEn = profile.titleEn ?? profile.title ?? "Professor";
   const titleZh = profile.titleZh ?? "教授";
-  const cvPath = profile.cvPath ?? "./assets/bo-liu-cv-2026.pdf";
 
   const emailLink = document.getElementById("email-link");
   const footerEmail = document.getElementById("footer-email");
   const profileButtons = [document.getElementById("btn-profile"), document.getElementById("pub-footer-profile")];
-  const cvButtons = [document.getElementById("btn-cv"), document.getElementById("pub-footer-cv")];
   const footerName = document.getElementById("footer-name");
   const heroName = document.getElementById("hero-name");
   const heroTitle = document.getElementById("hero-title");
@@ -276,12 +270,6 @@ function applyProfile(locale) {
   profileButtons.forEach((button) => {
     if (button) {
       button.href = facultyProfile;
-    }
-  });
-
-  cvButtons.forEach((button) => {
-    if (button) {
-      button.href = cvPath;
     }
   });
 

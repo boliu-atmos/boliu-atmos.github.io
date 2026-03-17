@@ -6,8 +6,7 @@ window.ACADEMIC_SITE_CONFIG = {
     titleZh: "教授",
     affiliation: "School of Atmospheric Sciences, Chengdu University of Information Technology",
     email: "liubo@cuit.edu.cn",
-    facultyProfile: "https://cas.cuit.edu.cn/info/1068/2841.htm",
-    cvPath: "./assets/bo-liu-cv-2026.pdf"
+    facultyProfile: "https://cas.cuit.edu.cn/info/1068/2841.htm"
   },
   comments: {
     enabled: false,

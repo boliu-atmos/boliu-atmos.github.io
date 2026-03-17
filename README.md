@@ -14,7 +14,6 @@ The page includes a built-in Chinese/English toggle with browser-language detect
 - `assets/style.css`: typography, layout, and visual design
 - `assets/site.js`: reveal animation and comment bootstrapping
 - `assets/site.config.js`: the only file you normally need to edit
-- `assets/bo-liu-cv-2026.pdf`: linked CV
 
 ## Local preview
 
